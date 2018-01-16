@@ -1,5 +1,4 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { PropTypes } from 'react'
 import TextRow from './TextRow';
 
 export default class TextBlock extends React.Component {
