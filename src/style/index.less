@@ -1,12 +1,10 @@
-.show-loading-animation {
-  &.rect-shape,
-  &.round-shape,
-  &.text-row,
-  .rect-shape,
-  .round-shape,
-  .text-row {
-    animation: react-placeholder-pulse 1.5s infinite;
-  }
+.show-loading-animation.rect-shape,
+.show-loading-animation.round-shape,
+.show-loading-animation.text-row,
+.show-loading-animation .rect-shape,
+.show-loading-animation .round-shape,
+.show-loading-animation .text-row {
+  animation: react-placeholder-pulse 1.5s infinite;
 }
 
 @keyframes react-placeholder-pulse {
@@ -18,5 +16,19 @@
   }
   100% {
     opacity: 0.6;
+  }
+}
+.media-block {
+  display: block !important;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .round-shape {
+    float: left;
+  }
+  .text-block {
+    padding-left: 65px;
   }
 }
