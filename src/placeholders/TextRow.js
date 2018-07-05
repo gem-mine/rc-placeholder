@@ -1,11 +1,14 @@
 import React, { PropTypes } from 'react'
 
 export default class TextRow extends React.Component {
-
   static propTypes = {
     className: PropTypes.string,
     color: PropTypes.string,
     lineSpacing: PropTypes.oneOfType([
+      PropTypes.string,
+      PropTypes.number
+    ]),
+    maxHeight: PropTypes.oneOfType([
       PropTypes.string,
       PropTypes.number
     ]),
@@ -16,8 +19,8 @@ export default class TextRow extends React.Component {
     lineSpacing: '0.7em'
   }
 
-  render() {
-    const { className, maxHeight, color, lineSpacing, style } = this.props;
+  render () {
+    const { className, maxHeight, color, lineSpacing, style } = this.props
 
     const defaultStyles = {
       maxHeight,
@@ -25,16 +28,15 @@ export default class TextRow extends React.Component {
       height: '1em',
       backgroundColor: color,
       marginTop: lineSpacing
-    };
+    }
 
-    const classes = ['text-row', className].filter(c => c).join(' ');
+    const classes = ['text-row', className].filter(c => c).join(' ')
 
     return (
       <div
         className={classes}
         style={{ ...defaultStyles, ...style }}
       />
-    );
+    )
   }
-
 }

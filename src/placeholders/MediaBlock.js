@@ -1,10 +1,8 @@
 import React, { PropTypes } from 'react'
-import TextBlock from './TextBlock';
-import RoundShape from './RoundShape';
-
+import TextBlock from './TextBlock'
+import RoundShape from './RoundShape'
 
 export default class MediaBlock extends React.Component {
-
   static propTypes = {
     rows: PropTypes.number.isRequired,
     color: PropTypes.string.isRequired,
@@ -12,10 +10,10 @@ export default class MediaBlock extends React.Component {
     className: PropTypes.string
   }
 
-  render() {
-    const { className, style, color, rows } = this.props;
+  render () {
+    const { className, style, color, rows } = this.props
 
-    const classes = ['media-block', className].filter(c => c).join(' ');
+    const classes = ['media-block', className].filter(c => c).join(' ')
 
     return (
       <div className={classes} style={{ ...style, display: 'flex' }}>
@@ -25,7 +23,6 @@ export default class MediaBlock extends React.Component {
         />
         <TextBlock color={color} rows={rows} />
       </div>
-    );
+    )
   }
-
 }

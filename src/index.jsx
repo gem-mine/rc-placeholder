@@ -11,6 +11,7 @@ export default class ReactPlaceholder extends React.Component {
     type: PropTypes.oneOf(['text', 'media', 'textRow', 'rect', 'round']),
     rows: PropTypes.number,
     color: PropTypes.string,
+    className: PropTypes.string,
     showLoadingAnimation: PropTypes.bool,
     customPlaceholder: PropTypes.oneOfType([PropTypes.node, PropTypes.element])
   }
@@ -27,9 +28,6 @@ export default class ReactPlaceholder extends React.Component {
 
   getFiller = () => {
     const {
-      firstLaunchOnly,
-      children,
-      ready,
       className, // eslint-disable-line no-unused-vars
       type,
       customPlaceholder,

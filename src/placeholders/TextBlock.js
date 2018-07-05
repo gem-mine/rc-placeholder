@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react'
-import TextRow from './TextRow';
+import TextRow from './TextRow'
 
 export default class TextBlock extends React.Component {
-
   static propTypes = {
     rows: PropTypes.number.isRequired,
     color: PropTypes.string.isRequired,
@@ -20,37 +19,36 @@ export default class TextBlock extends React.Component {
   }
 
   getRowStyle = (i) => {
-    const { rows, color, widths } = this.props;
+    const { rows, color, widths } = this.props
 
     return {
       backgroundColor: color,
       maxHeight: `${(100 / (rows * 2 - 1))}%`,
       width: `${widths[(i + widths.length) % widths.length]}%`
-    };
+    }
   }
 
   getRows = () => {
-    const { rows, lineSpacing } = this.props;
-    const range = [...Array(rows)];
+    const { rows, lineSpacing } = this.props
+    const range = [...Array(rows)]
     return range.map((x, i) => (
       <TextRow
         style={this.getRowStyle(i)}
         lineSpacing={i !== 0 ? lineSpacing : 0}
         key={i}
       />
-    ));
+    ))
   }
 
-  render() {
-    const { style, className } = this.props;
+  render () {
+    const { style, className } = this.props
 
-    const classes = ['text-block', className].filter(c => c).join(' ');
+    const classes = ['text-block', className].filter(c => c).join(' ')
 
     return (
       <div className={classes} style={{ ...style, width: '100%' }}>
         {this.getRows()}
       </div>
-    );
+    )
   }
-
 }
