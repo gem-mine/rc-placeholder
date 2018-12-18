@@ -1,6 +1,6 @@
 {
   "name": "@sdp.nd/react-placeholder",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "占位",
   "license": "MIT",
   "main": "lib/index.js",
@@ -23,8 +23,9 @@
     "lint"
   ],
   "dependencies": {
+    "babel-runtime": "^6.22.0",
     "classnames": "~2.2.0",
-    "babel-runtime": "^6.22.0"
+    "prop-types": "^15.6.2"
   },
   "devDependencies": {
     "pre-commit": "1.x",
