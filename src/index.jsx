@@ -23,10 +23,12 @@ export default class ReactPlaceholder extends React.Component {
     color: '#CDCDCD'
   }
 
-  state = {
-    ready: this.props.ready
+  constructor (props) {
+    super(props)
+    this.state = {
+      ready: props.ready
+    }
   }
-
   getFiller = () => {
     const {
       className, // eslint-disable-line no-unused-vars
