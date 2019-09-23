@@ -20,7 +20,7 @@ npm run start
 ### 文本占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder type="text" ready={false} rows={6} color="#E0E0E0">
@@ -33,7 +33,7 @@ ReactDOM.render(
 ### 多媒体占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder type="media" ready={false} rows={6}>
@@ -46,7 +46,7 @@ ReactDOM.render(
 ### 单行文本占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder type="textRow" ready={false} color="#E0E0E0">
@@ -59,7 +59,7 @@ ReactDOM.render(
 ### 矩形占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder type="rect" ready={false} color='#E0E0E0' style={{ width: 50, height: 50 }}>
@@ -72,7 +72,7 @@ ReactDOM.render(
 ### 圆形占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder type="round" ready={false} color='#E0E0E0' style={{ width: 50, height: 50 }}>
@@ -85,7 +85,7 @@ ReactDOM.render(
 ### 自定义占位元素
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder
@@ -105,7 +105,7 @@ ReactDOM.render(
 ### 带渐变动画的占位（需要css3支持）
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 ReactDOM.render(
   <Placeholder
@@ -125,7 +125,7 @@ ReactDOM.render(
 设置 firstLaunchOnly 属性为 true，ready 第一次为 false 时，占位符出现。
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 class App extends React.Component {
   constructor(props) {
@@ -170,7 +170,7 @@ ReactDOM.render(<App />, mountNode);
 通过设置 delay，控制延迟显示占位效果的时间（防止闪烁），单位是毫秒。
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
+import Placeholder from "@gem-mine/rc-placeholder";
 
 class App extends React.Component {
   constructor(props) {
@@ -215,8 +215,8 @@ ReactDOM.render(<App />, mountNode);
 直接使用内置占位类型，通常用来做自定义占位
 
 ```jsx
-import Placeholder from "@gem-mine/react-placeholder";
-import { TextBlock, MediaBlock, TextRow, RectShape, RoundShape } from "@gem-mine/react-placeholder/placeholders";
+import Placeholder from "@gem-mine/rc-placeholder";
+import { TextBlock, MediaBlock, TextRow, RectShape, RoundShape } from "@gem-mine/rc-placeholder/placeholders";
 
 const awesomePlaceholder = (
   <div className="my-awesome-placeholder">

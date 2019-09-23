@@ -1,5 +1,5 @@
 {
-  "name": "@gem-mine/react-placeholder",
+  "name": "@gem-mine/rc-placeholder",
   "version": "1.0.4",
   "description": "占位",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "site": "md-tools build",
     "build": "npm run clean && npm run babel",
     "clean": "shx rm -rf lib site && shx echo clean Done",
-    "pub": "npm run build && npm publish --access publish"
+    "pub": "npm run build && npm publish --access public"
   },
   "author": "666595 <pengxing201@163.com>",
   "files": [
