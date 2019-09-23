@@ -24,7 +24,7 @@ module.exports = {
     config.resolve.alias = {
       'fish/lib': '@sdp.nd/fish/lib',
       fish: '@sdp.nd/fish',
-      '@sdp.nd/react-placeholder': path.join(process.cwd(), 'src/index'),
+      '@gem-mine/react-placeholder': path.join(process.cwd(), 'src/index'),
       'react-router': 'react-router/umd/ReactRouter'
     }
     config.babel.plugins.push([

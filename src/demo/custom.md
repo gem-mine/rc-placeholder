@@ -6,7 +6,7 @@ title: 自定义占位
 自定义占位元素
 
 ```jsx
-import Placeholder from "@sdp.nd/react-placeholder";
+import Placeholder from "@gem-mine/react-placeholder";
 
 ReactDOM.render(
   <Placeholder

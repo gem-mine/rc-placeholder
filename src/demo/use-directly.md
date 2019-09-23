@@ -6,8 +6,8 @@ title: 直接使用内置占位类型
 直接使用内置占位类型，通常用来做自定义占位
 
 ```jsx
-import Placeholder from "@sdp.nd/react-placeholder";
-import { TextBlock, MediaBlock, TextRow, RectShape, RoundShape } from "@sdp.nd/react-placeholder/../placeholders";
+import Placeholder from "@gem-mine/react-placeholder";
+import { TextBlock, MediaBlock, TextRow, RectShape, RoundShape } from "@gem-mine/react-placeholder/../placeholders";
 
 const awesomePlaceholder = (
   <div className="my-awesome-placeholder">

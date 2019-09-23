@@ -6,7 +6,7 @@ title: 延迟出现占位
 通过设置 delay，控制延迟显示占位效果的时间（防止闪烁），单位是毫秒。
 
 ```jsx
-import Placeholder from "@sdp.nd/react-placeholder";
+import Placeholder from "@gem-mine/react-placeholder";
 
 class App extends React.Component {
   constructor(props) {

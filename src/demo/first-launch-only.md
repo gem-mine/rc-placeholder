@@ -6,7 +6,7 @@ title: 只出现一次
 设置 firstLaunchOnly 属性为 true，ready 第一次为 false 时，占位符出现。
 
 ```jsx
-import Placeholder from "@sdp.nd/react-placeholder";
+import Placeholder from "@gem-mine/react-placeholder";
 
 class App extends React.Component {
   constructor(props) {
