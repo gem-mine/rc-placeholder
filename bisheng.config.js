@@ -10,11 +10,9 @@ module.exports = {
     changelog: ['CHANGELOG.md']
   },
   output: './site',
-  theme: '@sdp.nd/bisheng-theme-component',
-  // htmlTemplate: "node_modules/@sdp.nd/bisheng-theme-component/src/static/template.html",
   themeConfig: {
     title: 'react-placeholder',
-    github: 'http://git.sdp.nd/component-h5/react-placeholder'
+    github: 'https://github.com/gem-mine/rc-placeholder'
   },
   doraConfig: {
     verbose: true,
@@ -22,8 +20,6 @@ module.exports = {
   },
   webpackConfig: config => {
     config.resolve.alias = {
-      'fish/lib': '@sdp.nd/fish/lib',
-      fish: '@sdp.nd/fish',
       '@gem-mine/rc-placeholder': path.join(process.cwd(), 'src/index'),
       'react-router': 'react-router/umd/ReactRouter'
     }
@@ -52,7 +48,6 @@ module.exports = {
         include: [
           path.join(basePath, 'src'),
           // 重新编译node_modules下的一些库，让他们支持ie8
-          path.join(nodeModulesPath, '@sdp.nd'),
           path.join(nodeModulesPath, 'react-copy-to-clipboard'),
           path.join(nodeModulesPath, 'react-color-standalone'),
           path.join(nodeModulesPath, 'deep-eql'),

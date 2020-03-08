@@ -35,4 +35,4 @@ timeline: true
 
 `2017-12-08`
 
-* [项目源码](http://git.sdp.nd/component-h5/react-placeholder), 兼容 IE8 的占位组件
+* [项目源码](https://github.com/gem-mine/rc-placeholder), 兼容 IE8 的占位组件
